@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Enigma</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Tiny Enigma</h1>
+
+        <section id="encrypt-section">
+
+            <h2>Encrypt Message</h2>
+
+            <textarea
+                id="message"
+                placeholder="Enter your message..."
+            ></textarea>
+
+            <div class="password-group">
+
+                <input
+                    type="password"
+                    id="encrypt-password"
+                    placeholder="Enter password"
+                >
+
+                <button
+                    type="button"
+                    id="show-encrypt-password"
+                >
+                    Show
+                </button>
+
+            </div>
+
+            <button id="encrypt-btn">
+                Encrypt
+            </button>
+
+            <textarea
+                id="encrypted-output"
+                readonly
+                placeholder="Encrypted text will appear here..."
+            ></textarea>
+
+            <button id="copy-encrypted-btn">
+                Copy Encrypted Text
+            </button>
+
+        </section>
+
+        <hr>
+
+        <section id="decrypt-section">
+
+            <h2>Decrypt Message</h2>
+
+            <textarea
+                id="encrypted-input"
+                placeholder="Paste encrypted text..."
+            ></textarea>
+
+            <div class="password-group">
+
+                <input
+                    type="password"
+                    id="decrypt-password"
+                    placeholder="Enter password"
+                >
+
+                <button
+                    type="button"
+                    id="show-decrypt-password"
+                >
+                    Show
+                </button>
+
+            </div>
+
+            <button id="decrypt-btn">
+                Decrypt
+            </button>
+
+            <textarea
+                id="decrypted-output"
+                readonly
+                placeholder="Decrypted message will appear here..."
+            ></textarea>
+
+            <button id="copy-decrypted-btn">
+                Copy Decrypted Text
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
